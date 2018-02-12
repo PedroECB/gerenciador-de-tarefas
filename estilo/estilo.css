@@ -1,0 +1,95 @@
+@charset:"utf-8";
+
+body{
+  font-family: 'Helvetica',sans-serif;
+  margin:80px 115px 80px 100px;
+
+}
+
+
+table{
+  border-collapse:collapse;
+  margin-left:;
+  border:1px solid black;
+}
+
+    th{padding-bottom: 6px;
+       padding-top: 6px;
+    } 
+
+  thead{background:linear-gradient(to top,silver, white);}      
+
+table td{text-align: center;
+         border:1px solid black;
+         width:;
+        }
+.opcoes{width: 170px;}           
+
+
+#cadastrar{
+  
+}
+
+.botoes{
+        margin-right:2px;
+        width:;
+        font-size: 1em;
+        }
+.btnn1{width: 80%;
+        height:40px;
+        border-radius: 7px;
+       /*background-color:#0aae21;*/
+       background:linear-gradient(to top,#0aae21,#0ad426);
+       border: 1px solid green;
+       color: white;
+       font-weight: bolder; }
+
+.btnn1:hover{
+   background:linear-gradient(to top,#45ff8f,#0ad427);;
+   border: 1px solid white;
+   cursor: pointer;
+ }      
+
+.btnn2{ width: ;
+        height:25px;
+        background: linear-gradient(to top,#7991e1,#0027a6);
+        color: white;
+        border-radius: 3px;
+        border: 1px solid blue;
+        font-weight: bolder;
+}
+
+.btnn2:hover{
+  background: linear-gradient(to top,#45b2ff,#45b2ff);
+  cursor: pointer;
+}
+
+
+.btnn3{width: ;
+        height:25px;
+        background: linear-gradient(to top,red,#606060);
+        color: white;
+        border-radius: 3px;
+        border: 1px solid red;
+        font-weight: bolder;
+        
+      }     
+
+   .btnn3:hover{
+     background: linear-gradient(to top,#e0595c,#e0595c);
+     cursor: pointer;
+   }
+     
+
+.enter{border:1px solid white;
+       margin:;
+       box-sizing:border-box;
+       height:40px;
+       width:100%;}
+
+.enter2{background-color: #888181;
+        }
+
+.enter2 td{padding-bottom:;}
+.tr1{background-color: silver;}
+.tr2{background-color: #888181;}
