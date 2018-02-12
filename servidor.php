@@ -16,7 +16,7 @@
           echo "";
         }
 
-
+               // Inserindo dados no banco
 
 function insere($numero,$tarefa,$concluida,$prazo,$descricao){
   global $con;
@@ -32,6 +32,10 @@ function insere($numero,$tarefa,$concluida,$prazo,$descricao){
 
 
 }
+
+
+                     // Validando as informações do formulário
+
 
 function valida(){
 
