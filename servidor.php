@@ -67,6 +67,19 @@ function consulta(){
     }
   }
 
+function consulta2($id){
+  global $con;
+  $query = "SELECT * FROM tarefas WHERE id='$id'";
+
+  $consulta = mysqli_query($con,$query);
+  if(!$consulta){
+    echo "Falha na segunda query";
+  }else{
+    return $consulta;
+    }
+  }
+
+
 
 function traduzData($campo){
 

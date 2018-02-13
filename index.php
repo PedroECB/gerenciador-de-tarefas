@@ -12,6 +12,7 @@
 <html>
 <head>
   <title>Agenda</title>
+  <meta charset="utf-8">
   <link rel="stylesheet" type="text/css" href="estilo/normalize.css">
   <link rel="stylesheet" type="text/css" href="estilo/estilo.css">
 </head>
@@ -58,7 +59,8 @@
       <td><?php echo $row['descricao']; ?></td>
       <td><?php echo traduzConcluida($row['concluida']); ?></td>
       <td class="opcoes">
-        <input class="botoes btnn2" type="button" value="Editar">
+
+        <a href="editar.php?id=<?php echo $row['id'];?>"><input class="botoes btnn2" type="button" value="Editar"></a>
         <input class="botoes btnn3" type="button" value="Excluir">
       </td>
        
