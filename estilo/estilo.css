@@ -15,6 +15,7 @@ table{
 
     th{padding-bottom: 6px;
        padding-top: 6px;
+       text-align: center;
     } 
 
   thead{background:linear-gradient(to top,silver, white);}      
@@ -30,11 +31,8 @@ table td{text-align: center;
   
 }
 
-.botoes{
-        margin-right:2px;
-        width:;
-        font-size: 1em;
-        }
+.button{margin-left:10px;}
+
 .btnn1{width: 80%;
         height:40px;
         border-radius: 7px;
@@ -74,18 +72,6 @@ table td{text-align: center;
         font-weight: bolder;
         
       }     
-
-   .btnn3:hover{
-     background: linear-gradient(to top,#e0595c,#e0595c);
-     cursor: pointer;
-   }
-     
-
-.enter{border:1px solid white;
-       margin:;
-       box-sizing:border-box;
-       height:40px;
-       width:100%;}
 
 .enter2{background-color: #888181;
         }
