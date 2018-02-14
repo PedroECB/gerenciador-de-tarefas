@@ -79,11 +79,40 @@ function consulta2($id){
     }
   }
 
+  function atualiza($id){
+  
+if(empty($_GET['conc'])){ $concluida = 0;}
+if(!empty($_GET['conc'])){ $concluida = $_GET['conc']; }
+if(!empty($_GET['prazo'])){$prazo= $_GET['prazo'];}
+if(empty($_GET['prazo'])){ $prazo = "1970-01-01";}
+
+  $nome= $_GET['nome'];
+  $descricao= $_GET['descricao'];
+  $prioridade = $_GET['prioridade'];
+ 
+
+
+
+
+  global $con;
+  $query = "UPDATE tarefas set tarefa='$nome', descricao='$descricao', prazo='$prazo', prioridade=$prioridade, concluida=$concluida WHERE id=$id";
+  $consulta = mysqli_query($con,$query);
+  
+  if(!$consulta){
+    echo "Falha na query de atualização";
+  }else{
+    header("Location:index.php");
+    die();
+    }
+  }
+
+  
+
 
 
 function traduzData($campo){
 
- if($campo =="0000-00-00" or $campo == ""){
+ if($campo =="0000-00-00" or $campo == "" or $campo == "1970-01-01"){
     $campo == " ";
   return $campo;
  }

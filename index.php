@@ -45,7 +45,8 @@
         <td><input class="btn btn-warning btn-block" type="submit" value="Agendar" id="cadastrar"></td>
        </form> 
       </tr>
-    
+   
+   <!-- 
     <tr class="tr1">
       <td><b>0789</b></td>
       <td>Estudar Java</td>
@@ -54,6 +55,7 @@
       <td>Não</td>
       <td><input class="button btn btn-info btn-sm" type="button" value="Editar"><input class="button btn btn-danger btn-sm" type="button" value="Excluir"></td>
     </tr>
+  -->
 
     <?php $cont =0; foreach($vetor as $row): $cont++; ?>
     <?php  if($cont%2 ==0){ $class="tr1";}else{ $class = "tr2";} ?>
@@ -62,7 +64,7 @@
      <tr class="<?php echo $class;?>">
       <td><b><?php echo $row['numero']; ?></b></td>
       <td><?php echo $row['tarefa']; ?></td>
-      <td><?php echo traduzData($row['prazo']); ?></td>
+      <td><?php if(traduzData($row['prazo']) == "1970-01-01"){ echo " ";}else{ echo traduzData($row['prazo']); }; ?></td>
       <td><?php echo $row['descricao']; ?></td>
       <td><?php echo traduzConcluida($row['concluida']); ?></td>
       <td class="opcoes">

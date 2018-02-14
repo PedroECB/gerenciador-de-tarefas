@@ -32,17 +32,18 @@ foreach ($vetor as $row) {
   <div class="col-md-4">
     
   </div>
-    <form>
+    <form action="editar2.php">
       <fieldset>
         <h2>Editar</h2>
          <b>Tarefa:</b><br>
          <input type="text" name="nome" class="nome form-control" value="<?php echo $nome;?>"><br>
-
+         <input type="hidden" name="idd" value="<?php echo $row['id']; ?>">
+  
          <br><b>Descrição</b><br>
          <textarea name="descricao" cols="25" rows="2" maxlength="75" class="nome form-control"><?php echo $descricao; ?></textarea><br>
 
          <br><b>Prazo</b><br>
-         <input type="date" name="prazo" value="" class="form-control"><br>
+         <input type="date" name="prazo" class="form-control"><br>
 
          <br><b>Prioridade</b>
 
@@ -54,10 +55,10 @@ foreach ($vetor as $row) {
           
           <br>
          <br><b>Concluída</b>
-         <input type="checkbox" name="concluida" value="2" placeholder=""<?php if($concluida == 1){ echo "checked";}?>>
+         <input type="checkbox" name="conc" value="1" placeholder=""<?php if($concluida == 1){ echo "checked";}?>>
          <br>
          <br>
-         <input type="submit" value="Salvar" class="btn btn-primary">
+         <a href="editar2.php?id=<?php echo $row['id']; ?>"><input type="submit" value="Salvar" class="btn btn-primary"></a>
 
       </fieldset>
 
