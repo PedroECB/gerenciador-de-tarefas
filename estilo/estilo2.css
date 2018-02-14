@@ -2,12 +2,17 @@
 
 
 fieldset{
+  margin-top: 20px;
   width: 500px;
   border-radius: 6px;
-  margin-left: 400px;
+  /*margin-left: 400px;*/
+  border: 1px solid silver;
+  padding: 30px;
 }
-legend{text-align:;
-       font-weight: bolder;}
+
+h2{position: relative;
+   top:-30px;}
+
 
 input{border-radius:4px;
       border:1px solid silver;}
@@ -16,5 +21,5 @@ input{border-radius:4px;
 
 textarea{border-radius: 4px;
          border:1px solid silver;}
-select{border-radius: 4px;
-       border:1px solid silver;}
+
+
